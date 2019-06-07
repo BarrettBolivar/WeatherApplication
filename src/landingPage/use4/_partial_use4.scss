@@ -1,0 +1,10 @@
+.use4-container {
+	background-image: url('../src/public/images/cloud.png');
+	background-size: 40%;
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+.use4-container:hover {
+	background-color: rgba(0, 89, 95, 0.5);
+	cursor: pointer;
+}

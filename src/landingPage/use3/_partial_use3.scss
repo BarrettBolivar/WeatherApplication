@@ -1,0 +1,10 @@
+.use3-container {
+	background-image: url('../src/public/images/HumidityIcon.png');
+	background-size: 25%;
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+.use3-container:hover {
+	background-color: rgba(0, 89, 95, 0.5);
+	cursor: pointer;
+}

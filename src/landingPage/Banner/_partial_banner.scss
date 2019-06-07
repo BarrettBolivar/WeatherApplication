@@ -1,0 +1,275 @@
+* { box-sizing: border-box; }
+$duration: 160s;
+
+@-webkit-keyframes ticker {
+	0% {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+		visibility: visible;
+	}
+
+	100% {
+		-webkit-transform: translate3d(-100%, 0, 0);
+		transform: translate3d(-100%, 0, 0);
+	}
+}
+
+@keyframes ticker {
+	0% {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+		visibility: visible;
+	}
+
+	100% {
+		-webkit-transform: translate3d(-100%, 0, 0);
+		transform: translate3d(-100%, 0, 0);
+	}
+}
+
+.ticker-wrap {
+	opacity: 0.8;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	overflow: hidden;
+	height: 2rem;
+	background-color: rgba(#000, 0.9); 
+	padding-left: 100%;
+	box-sizing: content-box;
+
+	.ticker {
+		display: inline-block;
+		height: 2rem;
+		line-height: 2rem;  
+		white-space: nowrap;
+		padding-right: 100%;
+		box-sizing: content-box;
+		-webkit-animation-iteration-count: infinite; 
+				animation-iteration-count: infinite;
+		-webkit-animation-timing-function: linear;
+				animation-timing-function: linear;
+		-webkit-animation-name: ticker;
+				animation-name: ticker;
+		-webkit-animation-duration: $duration;
+				animation-duration: $duration;
+
+		.ticker__item {
+			display: inline-block;
+			padding: 0 2rem;
+			font-size: 1rem;
+			color: white;   
+		}
+	}
+}
+
+.bannerInner.close {
+	z-index: 1;
+	background-color: bisque;
+	position: relative;
+	top: 2rem;
+	left: -100%;
+	width: 15vw;
+	overflow: hidden;
+	transition: all .3s ease-in;
+	display: inline-block;
+}
+.bannerInner.open {
+	background-color: bisque;
+	z-index: 1;
+	position: relative;
+	top: 2rem;
+	left: 0%;
+	width: 15vw;
+	overflow: hidden;
+	transition: all .3s ease-in;
+	display: inline-block;
+}
+
+.banner-button {
+	position: absolute;
+	top: 2rem;
+	width: 2rem;
+	left: 0%;
+	height: 2rem;
+	z-index: 1;
+	display: inline-block;
+}
+
+.submitButton {
+	width: auto;
+}
+
+form>input {
+	display: block;
+}
+
+#deleteCookie {
+	width: auto;
+	position: absolute;
+	top: 2rem;
+	left: 0%;
+	height: 2rem;
+	z-index: 1;
+	display: inline-block;
+}
+
+/* <<START>> of style for background image to by dynamically set */
+.cloud-day {
+	margin-top: 10px;
+	width: 18vmin;
+	height: 18vmin;
+	padding: 10px;
+	position: fixed;
+	right: 0px;
+	background-image: url('../src/public/animated/cloudy-day-1.svg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.cloud-night {
+	margin-top: 10px;
+	width: 18vmin;
+	height: 18vmin;
+	padding: 10px;
+	position: fixed;
+	right: 0px;
+	background-image: url('../src/public/animated/cloudy-night-1.svg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.thunder-day {
+	margin-top: 10px;
+	width: 18vmin;
+	height: 18vmin;
+	padding: 10px;
+	position: fixed;
+	right: 0px;
+	background-image: url('../src/public/animated/thunder.svg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.thunder-night {
+	margin-top: 10px;
+	width: 18vmin;
+	height: 18vmin;
+	padding: 10px;
+	position: fixed;
+	right: 0px;
+	background-image: url('../src/public/animated/rainy-1.svg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.lightning-day {
+	margin-top: 10px;
+	width: 18vmin;
+	height: 18vmin;
+	padding: 10px;
+	position: fixed;
+	right: 0px;
+	background-image: url('../src/public/animated/rainy-2.svg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.lightning-day {
+	margin-top: 10px;
+	width: 18vmin;
+	height: 18vmin;
+	padding: 10px;
+	position: fixed;
+	right: 0px;
+	background-image: url('../src/public/animated/rainy-3.svg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.snow-day {
+	margin-top: 10px;
+	width: 18vmin;
+	height: 18vmin;
+	padding: 10px;
+	position: fixed;
+	right: 0px;
+	background-image: url('../src/public/animated/snowy-3.svg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.snow-night {
+	margin-top: 10px;
+	width: 18vmin;
+	height: 18vmin;
+	padding: 10px;
+	position: fixed;
+	right: 0px;
+	background-image: url('../src/public/animated/snowy-1.svg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.rain-day {
+	margin-top: 10px;
+	width: 18vmin;
+	height: 18vmin;
+	padding: 10px;
+	position: fixed;
+	right: 0px;
+	background-image: url('../src/public/animated/rainy-4.svg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.rain-night {
+	margin-top: 10px;
+	width: 18vmin;
+	height: 18vmin;
+	padding: 10px;
+	position: fixed;
+	right: 0px;
+	background-image: url('../src/public/animated/rainy-7.svg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.default-day {
+	margin-top: 10px;
+	width: 18vmin;
+	height: 18vmin;
+	padding: 10px;
+	position: fixed;
+	right: 0px;
+	background-image: url('../src/public/animated/day.svg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.default-night {
+	margin-top: 10px;
+	width: 18vmin;
+	height: 18vmin;
+	padding: 10px;
+	position: fixed;
+	right: 0px;
+	background-image: url('../src/public/animated/day.svg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+/* <<END>> of style for background image to by dynamically set */
+
+.static-general-weather {
+	background-color:rgba(214, 186, 109, 0.5);
+	border: 1px solid white;
+	top: 2rem;
+	-webkit-box-shadow: 5px 5px 15px 5px #000000; 
+	box-shadow: 5px 5px 15px 5px #000000;
+	display: inline-block;
+	p {
+		position: absolute;
+		bottom: 0px;
+		border-top: 1px solid white;
+	}
+}

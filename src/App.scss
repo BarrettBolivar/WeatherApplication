@@ -1,0 +1,158 @@
+@import 'variables';
+@import '../src/landingPage/partial_landingPage';
+@import './landingPage/Banner/partial_banner';
+@import './landingPage/Footer/partial_footer';
+@import './landingPage/use1/partial_use1';
+@import './landingPage/use2/partial_use2';
+@import './landingPage/use3/partial_use3';
+@import './landingPage/use4/partial_use4';
+@import './landingPage/use5/partial_use5';
+
+/**********************************
+
+Use: Reset Styles for all browsers
+
+***********************************/
+	
+body, p, blockquote {
+	margin: 0;
+	padding: 0;
+}
+
+a img, iframe { border: none; }
+	
+/* Headers
+------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+}
+	
+/* Lists
+------------------------------*/
+	
+ul, ol, dl, li, dt, dd {
+	margin: 0;
+	padding: 0;
+}
+	
+/* Links
+------------------------------*/
+
+a, a:link {}
+a:visited {}
+a:hover {}
+a:active {}
+
+/* Forms
+------------------------------*/
+
+form, fieldset {
+	margin: 0;
+	padding: 0;
+}
+	
+fieldset { border: 1px solid #000; }
+
+legend {
+	padding: 0;
+	color: #000;
+}
+
+input, textarea, select {
+	margin: 0;
+	padding: 1px;
+	font-size: 100%;
+	font-family: inherit;
+}
+	
+select { padding: 0; }
+
+.main-container {
+	list-style: none;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow:row wrap;
+	justify-content: space-around;
+	background-image: url('../src/public/images/background.jpeg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.useone{
+	width: 20%;
+	height: 50vh;
+	line-height: 150px;
+	color: white;
+	font-weight: bold;
+	font-size: 1.5em;
+	text-align: center;
+	background-color:rgba(0, 0, 0, 0.5);
+}
+.usetwo {
+	width: 20%;
+	height: 50vh;
+	line-height: 150px;
+	color: white;
+	font-weight: bold;
+	font-size: 1.5em;
+	text-align: center;
+	background-color:rgba(0, 0, 0, 0.5);
+}
+.usethree {
+	width: 20%;
+	height: 50vh;
+	line-height: 150px;
+	color: white;
+	font-weight: bold;
+	font-size: 1.5em;
+	text-align: center;
+	background-color:rgba(0, 0, 0, 0.5);
+}
+.usefour {
+	width: 20%;
+	height: 50vh;
+	line-height: 150px;
+	color: white;
+	font-weight: bold;
+	font-size: 1.5em;
+	text-align: center;
+	background-color:rgba(0, 0, 0, 0.5);
+}
+.usefive {
+	width: 20%;
+	height: 50vh;
+	line-height: 150px;
+	color: white;
+	font-weight: bold;
+	font-size: 1.5em;
+	text-align: center;
+	background-color:rgba(0, 0, 0, 0.5);
+}
+//all styles are placeholders and will change as we move farther along into the project.
+
+
+.banner {
+    width:100vw;
+    height:40vh;
+    background-color:rgba(200,200,200, 0);
+}
+
+.footer {
+	width:100vw;
+	height:10vh;
+	background-color:black;
+	color:white;
+	justify-content: center;
+	text-align: center;
+}
+
+#map:hover {
+	cursor: default;
+}

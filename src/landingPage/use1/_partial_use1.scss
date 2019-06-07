@@ -1,0 +1,10 @@
+.use1-container {
+	background-image: url('../src/public/images/WindIcon.png');
+	background-size: 30%;
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+.use1-container:hover {
+	background-color: rgba(0, 89, 95, 0.5);
+	cursor: pointer;
+}
