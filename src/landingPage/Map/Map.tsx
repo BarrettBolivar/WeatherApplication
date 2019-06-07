@@ -7,7 +7,7 @@ import styled from 'styled-components';
 
 interface IUseTwoProps {
 	apiInformation: apiCall;
-	position: number[];
+	position: any;
 	layer: string;
 }
 
