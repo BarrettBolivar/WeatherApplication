@@ -7,7 +7,7 @@ export default async function weatherCall(city: string) {
         return res.json();
     }
     catch (error) {
-        throw new Error;
-        
+        console.log('error in baseWeatherCall', error);
+        return {};
     }
 };
