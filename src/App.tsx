@@ -158,6 +158,9 @@ class App extends React.Component<{}, IAppState> {
 	}
 
 	public render() {
+		if(document.URL.match(/^https/gi)){
+			alert('Please remove the \'s\' from the https in the url for the app to function normally.')
+		}
 		return (
 			<div className="main-container">
 				<>
