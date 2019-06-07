@@ -1,3 +1,5 @@
+Special thanks to Taylor Sheckells (https://github.com/SheckellsTaylor) who helped me with some styling. 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
